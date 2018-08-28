@@ -1,4 +1,11 @@
-var playlist = { michealJackson: "beat it" };
-function removeFromPlaylist(playlist, michealJackson){
- return delete playlist.michealJackson;
+var playlist = {michealJakson : 'beatIt'};
+function updatePlaylist(playlist, artist, song){
+  playlist[artist] = song
+  return playlist
 }
+
+function removeFromPlaylist(playlist, artist){
+ delete playlist [artist]; 
+ return playlist
+}
+
